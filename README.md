@@ -8,80 +8,79 @@
 ![](https://github.com/XrayR-project/XrayR/actions/workflows/docker.yml/badge.svg)
 [![Github All Releases](https://img.shields.io/github/downloads/XrayR-project/XrayR/total.svg)]()
 
-
-[English](https://github.com/XrayR-project/XrayR/blob/master/README-en.md)|[Iranian](https://github.com/XrayR-project/XrayR/blob/master/README_Fa.md)|[Vietnamese](https://github.com/XrayR-project/XrayR/blob/master/README-vi.md)
+[Iranian(farsi) README](https://github.com/XrayR-project/XrayR/blob/master/README_Fa.md), [Vietnamese(vi) README](https://github.com/XrayR-project/XrayR/blob/master/README-vi.md), [English(en) README](https://github.com/XrayR-project/XrayR/blob/master/README-en.md)
 
 A Xray backend framework that can easily support many panels.
 
-一个基于Xray的后端框架，支持V2ay,Trojan,Shadowsocks协议，极易扩展，支持多面板对接。
+Khung trở lại dựa trên XRay hỗ trợ các giao thức V2ay, Trojan, Shadowsocks, dễ dàng mở rộng và hỗ trợ kết nối nhiều người.
 
-如果您喜欢本项目，可以右上角点个star+watch，持续关注本项目的进展。
+Nếu bạn thích dự án này, bạn có thể nhấp vào Star+Watch ở góc trên bên phải để tiếp tục chú ý đến tiến trình của dự án này.
 
-使用教程：[详细使用教程](https://xrayr-project.github.io/XrayR-doc/)
+## Tài liệu
+Sử dụng hướng dẫn: [Hướng dẫn chi tiết](https://xrayr-project.github.io/XrayR-doc/) ( Tiếng Trung )
 
+## Tuyên bố miễn trừ
 
-## 免责声明
+Dự án này chỉ là học tập và phát triển và bảo trì cá nhân của tôi. Tôi không đảm bảo bất kỳ sự sẵn có nào và không chịu trách nhiệm cho bất kỳ hậu quả nào do việc sử dụng phần mềm này.
 
-本项目只是本人个人学习开发并维护，本人不保证任何可用性，也不对使用本软件造成的任何后果负责。
+## Đặt điểm nổi bật
 
-## 特点
+* Nguồn mở vĩnh viễn và miễn phí.
+* Hỗ trợ V2Ray, Trojan, Shadowsocks nhiều giao thức.
+* Hỗ trợ các tính năng mới như Vless và XTL.
+* Hỗ trợ trường hợp đơn lẻ kết nối Multi -Panel và Multi -Node, không cần phải bắt đầu nhiều lần.
+* Hỗ trợ hạn chế IP trực tuyến
+* Hỗ trợ cấp cổng nút và giới hạn tốc độ cấp người dùng.
+* Cấu hình đơn giản và rõ ràng.
+* Sửa đổi phiên bản khởi động lại tự động.
+* Dễ dàng biên dịch và nâng cấp, bạn có thể nhanh chóng cập nhật phiên bản cốt lõi và hỗ trợ các tính năng mới của Xray-Core.
 
-* 永久开源且免费。
-* 支持V2ray，Trojan， Shadowsocks多种协议。
-* 支持Vless和XTLS等新特性。
-* 支持单实例对接多面板、多节点，无需重复启动。
-* 支持限制在线IP
-* 支持节点端口级别、用户级别限速。
-* 配置简单明了。
-* 修改配置自动重启实例。
-* 方便编译和升级，可以快速更新核心版本， 支持Xray-core新特性。
+## Chức năng
 
-## 功能介绍
-
-| 功能        | v2ray | trojan | shadowsocks |
+| Chức năng        | v2ray | trojan | shadowsocks |
 |-----------|-------|--------|-------------|
-| 获取节点信息    | √     | √      | √           |
-| 获取用户信息    | √     | √      | √           |
-| 用户流量统计    | √     | √      | √           |
-| 服务器信息上报   | √     | √      | √           |
-| 自动申请tls证书 | √     | √      | √           |
-| 自动续签tls证书 | √     | √      | √           |
-| 在线人数统计    | √     | √      | √           |
-| 在线用户限制    | √     | √      | √           |
-| 审计规则      | √     | √      | √           |
-| 节点端口限速    | √     | √      | √           |
-| 按照用户限速    | √     | √      | √           |
-| 自定义DNS    | √     | √      | √           |
+| Nhận thông tin Node    | √     | √      | √           |
+| Nhận thông tin người dùng    | √     | √      | √           |
+| Thống kê lưu lượng người dùng    | √     | √      | √           |
+| Báo cáo thông tin máy chủ   | √     | √      | √           |
+| Tự động đăng ký chứng chỉ TLS | √     | √      | √           |
+| Chứng chỉ TLS gia hạn tự động | √     | √      | √           |
+| Số người trực tuyến    | √     | √      | √           |
+| Hạn chế người dùng trực tuyến    | √     | √      | √           |
+| Quy tắc kiểm toán      | √     | √      | √           |
+| Giới hạn tốc độ cổng nút    | √     | √      | √           |
+| Theo giới hạn tốc độ người dùng    | √     | √      | √           |
+| DNS tùy chỉnh    | √     | √      | √           |
 
-## 支持前端
+## Hỗ trợ Panel 
 
-| 前端                                                     | v2ray | trojan | shadowsocks             |
+| Panel                                                     | v2ray | trojan | shadowsocks             |
 |--------------------------------------------------------|-------|--------|-------------------------|
-| sspanel-uim                                            | √     | √      | √ (单端口多用户和V2ray-Plugin) |
+| sspanel-uim                                            | √     | √      | √ (Nhiều người dùng cuối và v2ray-plugin) |
 | v2board                                                | √     | √      | √                       |
 | [PMPanel](https://github.com/ByteInternetHK/PMPanel)   | √     | √      | √                       |
 | [ProxyPanel](https://github.com/ProxyPanel/ProxyPanel) | √     | √      | √                       |
 | [WHMCS (V2RaySocks)](https://v2raysocks.doxtex.com/)   | √     | √      | √                       |
 
-## 软件安装
+## Cài đặt phần mềm
 
-### 一键安装
+### Một cài đặt chính
 
 ```
 wget -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh && bash install.sh
 ```
 
-### 使用Docker部署软件
+### Sử dụng phần mềm triển khai Docker
 
-[Docker部署教程](https://xrayr-project.github.io/XrayR-doc/xrayr-xia-zai-he-an-zhuang/install/docker)
+[Hướng dẫn cài đặt thông qua Docker](https://xrayr-project.github.io/XrayR-doc/xrayr-xia-zai-he-an-zhuang/install/docker)
 
-### 手动安装
+### Hướng dẫn cài đặt
 
-[手动安装教程](https://xrayr-project.github.io/XrayR-doc/xrayr-xia-zai-he-an-zhuang/install/manual)
+[Hướng dẫn cài đặt thủ công](https://xrayr-project.github.io/XrayR-doc/xrayr-xia-zai-he-an-zhuang/install/manual)
 
-## 配置文件及详细使用教程
+## Tệp cấu hình và hướng dẫn sử dụng chi tiết
 
-[详细使用教程](https://xrayr-project.github.io/XrayR-doc/)
+[Hướng dẫn chi tiết](https://xrayr-project.github.io/XrayR-doc/)
 
 ## Thanks
 
@@ -96,12 +95,10 @@ wget -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/ins
 
 ## Telgram
 
-[XrayR后端讨论](https://t.me/XrayR_project)
+[Xrayr Back-end Thảo luận](https://t.me/XrayR_project)
 
-[XrayR通知](https://t.me/XrayR_channel)
+[Thông báo Xrayr](https://t.me/XrayR_channel)
 
 ## Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/XrayR-project/XrayR.svg)](https://starchart.cc/XrayR-project/XrayR)
-
-
