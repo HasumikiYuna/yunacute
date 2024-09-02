@@ -1,0 +1,10 @@
+#!name=Locket Gold
+#!desc=PWR BY Hasumiki Yuna (YUNAGRP)
+
+[Script]
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/HasumikiYuna/XUI/main/YunaCrack.js?token=GHSAT0AAAAAACW5APAT2NMZUIWVTJS72YIOZWVUEYA, requires-body=true, max-size=-1, timeout=60
+
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/HasumikiYuna/XUI/main/YunaCrack1.js?token=GHSAT0AAAAAACW5APASRTTG4E4P62DZP3JCZWVUFLQ, timeout=60
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com
