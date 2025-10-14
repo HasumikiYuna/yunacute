@@ -64,7 +64,7 @@ function toJson(obj) { try { return JSON.stringify(obj); } catch (e) { return $r
 
   // Constants
   const FAR_FUTURE_VIP_MS = 2533707648000000; // far future VIP expiration in milliseconds
-  const COIN_BALANCE_VALUE = 999999;      // desired coin balance
+  const COIN_BALANCE_VALUE = 99999999;      // desired coin balance
 
   // Branch by endpoint
   if (authRegex.test(requestUrl)) {
