@@ -1,5 +1,5 @@
 // rphimx.js
-// power by YunaGRP
+// power by dabeecao + hcsavn + chatgpt
 
 /**
  * Safe patch for Rofilm API responses.
@@ -11,7 +11,7 @@
  * Applied changes:
  *  - is_vip = true
  *  - is_verified = true
- *  - vip_expires_at = 253394586000 (far future, in milliseconds)
+ *  - vip_expires_at = 11497526400000 (far future, in milliseconds)
  *  - coin_balance = 999999
  *
  * Why this approach:
@@ -63,8 +63,8 @@ function toJson(obj) { try { return JSON.stringify(obj); } catch (e) { return $r
   const infoRegex = /^https?:\/\/api\.rofilm\.net\/api\/app\/v1\/user\/info(?:\?.*)?$/i;
 
   // Constants
-  const FAR_FUTURE_VIP_MS = -11497526400000; // tương ứng với 03/12/8888
-  const COIN_BALANCE_VALUE = 9999999;      // desired coin balance
+  const FAR_FUTURE_VIP_MS = 11497526400000; // far future VIP expiration in milliseconds
+  const COIN_BALANCE_VALUE = 999999;      // desired coin balance
 
   // Branch by endpoint
   if (authRegex.test(requestUrl)) {
