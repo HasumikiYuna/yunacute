@@ -63,8 +63,8 @@ function toJson(obj) { try { return JSON.stringify(obj); } catch (e) { return $r
   const infoRegex = /^https?:\/\/api\.rofilm\.net\/api\/app\/v1\/user\/info(?:\?.*)?$/i;
 
   // Constants
-  const FAR_FUTURE_VIP_MS = 253368864000000; // far future VIP expiration in milliseconds
-  const COIN_BALANCE_VALUE = 9999999;      // desired coin balance
+  const FAR_FUTURE_VIP_MS = 118626672000000; // far future VIP expiration in milliseconds
+  const COIN_BALANCE_VALUE = 888888;      // desired coin balance
 
   // Branch by endpoint
   if (authRegex.test(requestUrl)) {
