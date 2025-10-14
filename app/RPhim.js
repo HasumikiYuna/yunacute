@@ -63,7 +63,7 @@ function toJson(obj) { try { return JSON.stringify(obj); } catch (e) { return $r
   const infoRegex = /^https?:\/\/api\.rofilm\.net\/api\/app\/v1\/user\/info(?:\?.*)?$/i;
 
   // Constants
-  const FAR_FUTURE_VIP_MS = new Date('8888-12-03T00:00:00Z').getTime(); // far future VIP expiration in milliseconds
+  const FAR_FUTURE_VIP_MS = -11497526400000; // tương ứng với 03/12/8888
   const COIN_BALANCE_VALUE = 9999999;      // desired coin balance
 
   // Branch by endpoint
